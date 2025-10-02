@@ -1,15 +1,26 @@
 
 //Ex1:
 alert('Boas vinda ao jogo do número secreto');
-let numeroSecreto = 5;
+let numeroSecreto = 4;
 console.log(numeroSecreto);
-let chute = prompt('Esccolha um número entre 1 e 10');
+let chute; 
+let tentativas = 1;
 
-//se chute for igual ao número secreto
-if (chute == numeroSecreto) {
-    alert(`Isso ai! Você descobriu o número secreto  ${numeroSecreto}`);
-} else {
-    alert('Vovê errou :(');
+// enquanto chute nao for igual ao n. s.
+while(chute != numeroSecreto){
+    chute = prompt('Esccolha um número entre 1 e 10');
+    //se chute for igual ao número secreto
+    if (chute == numeroSecreto) {
+        alert(`Isso ai! Você descobriu o número secreto  ${numeroSecreto} com ${tentativas} tentativas`);
+    } else {
+        if(chute > numeroSecreto){
+            alert(`O número secreto é memor que ${chute}`);
+        }else{
+            alert(`O número é maior que ${chute}`);
+        }
+        // tentativas = tentativas + 1;
+        tentativas++;
+    }
 }
 
 /*

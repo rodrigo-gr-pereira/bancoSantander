@@ -28,3 +28,50 @@ function mostrarAlerta() {
     alert(`O resultado  da soma dos dois números: ${soma}.`);
  };
 
+
+ //Functions
+ //1ª Criar uma função que exibe "Olá, mundo!" no console.
+ 
+ function exibirMensagem(){
+    console.log('Olá, mundo!')
+ };
+ exibirMensagem();
+
+ //2ª Criar uma função que recebe um nome como parâmetro e exibe "Olá, [nome]!" no console.
+ function recebeNome(nome){
+    console.log(`Olá, ${nome}!.`);
+ };
+ recebeNome("Rodrigo");
+
+ //3ª Criar uma função que recebe um número como parâmetro e retorna o dobro desse número.
+    function dobrarNumero(numero){
+        return numero * 2;
+    };
+//Exemplo de uso:
+let resultadoDobro = dobrarNumero(5);
+console.log("O dobro é: ", resultadoDobro);
+
+
+//4ª Criar uma função que recebe três números como parâmetros e retorna a média deles.
+function calcularMedia(a, b, c){
+    return (a + b + c)/3;
+};
+//Exemplo de uso:
+const media = calcularMedia(7,8,9);
+console.log("A média é: ", media);
+
+//5ª Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
+function encontrarMaior(a, b) {
+  return a > b ? a : b;
+}
+
+let maiorNumero = encontrarMaior(15, 9);
+console.log(maiorNumero);
+
+//6ª Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo.
+function quadrado(numero) {
+  return numero * numero;
+}
+
+let resultado = quadrado(2);
+console.log(resultado); 
